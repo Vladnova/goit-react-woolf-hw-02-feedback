@@ -1,0 +1,28 @@
+.wrap{
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+  margin-bottom: 20px;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  width: 200px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid #333;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.button:hover {
+  background-color: #333;
+  color: #fff;
+  border-color: #333;
+}
