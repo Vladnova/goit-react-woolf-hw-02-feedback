@@ -3,12 +3,12 @@ import styles from '../FeedbackOptions/FeedbackOptions.module.css';
 const FeedbackOptions = ({ options, onLeaveFeedback }) => {
   return (
     <div className={styles.wrap}>
-      {options.map((name, idx) => (
+      {options.map(name => (
         <button
-          key={idx}
+          key={name}
           type="button"
           data-name={name}
-          onClick={onLeaveFeedback}
+          onClick={() => onLeaveFeedback(name)}
           className={styles.button}
         >
           {name[0].toUpperCase() + name.slice(1)}

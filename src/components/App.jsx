@@ -12,8 +12,7 @@ export class App extends Component {
     bad: 0,
   };
 
-  handlerClick = e => {
-    const { name } = e.target.dataset;
+  handlerClick = name => {
     this.setState(prev => ({ [name]: prev[name] + 1 }));
   };
 
